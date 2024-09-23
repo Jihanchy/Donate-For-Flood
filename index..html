@@ -77,21 +77,37 @@
                     <span id="donation-amount">0</span>BDT
                 </div>
                 <div class="mt-3 space-y-4">
-                    <h1 class="text-text_primary text-xl font-semibold">Donate for Flood at Noakhali, Bangladesh</h1>
+                    <h1 class="text-text_primary text-xl font-semibold">Donate forFlood at Noakhali, Bangladesh</h1>
                     <p>Since 20 August 2024,heavy rainfall combined with water from upstream in
                         India has triggered severe flooding in several districts of Bangladesh
                         , including Feni, Noakhali, Cox'sBazar etc.Including Noakhali is almost
                         destroyed by flood and thousand of families are displaced, with significant damage of property
                         .Please join us in supporting the relief efforts and
                         making a positive impact on the lives of those in need.</p>
-                        
+
                     <!-- input amount -->
-                    <input id="input-amount-noakhlai" type="text" placeholder="Write Donation Amount" class="input input-bordered w-full" />
+                    <input id="input-amount-noakhlai" type="text" placeholder="Write Donation Amount"
+                        class="input input-bordered w-full" />
 
                     <!-- input btn -->
-                    <button id="donate-btn-noakhali" class="w-full btn font-bold rounded-md bg-primary hover:bg-slate-100">Donate
+                    <button id="donate-btn-noakhali"
+                        class="w-full btn font-bold rounded-md bg-primary hover:bg-slate-100">Donate
                         Now</button>
-                    </button>
+                    <!-- modal -->
+                    <!-- Open the modal using ID.showModal() method -->
+                    <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
+                        <div class="modal-box flex flex-col items-center">
+                            <h3 class="text-lg font-bold">Hello!</h3>
+                            <p class="py-4">Press ESC key or click the button below to close</p>
+                            <div class="modal-action">
+                                <form method="dialog">
+                                    <!-- if there is a button in form, it will close the modal -->
+                                    <button class="btn">Close</button>
+                                </form>
+                            </div>
+                        </div>
+                    </dialog>
+                    <!-- modal end -->
                 </div>
             </div>
         </section>
@@ -107,21 +123,23 @@
                 <!-- donation amount -->
                 <div class="flex items-center gap-1 ">
                     <span><img class="" src="assets/coin.png" alt=""></span>
-                    <span>0</span>BDT
+                    <span id="donation-amount-feni">0</span>BDT
                 </div>
                 <div class="mt-3 space-y-4">
                     <h1 class="text-text_primary text-xl font-semibold">Donate for Flood Relief in Feni,Bangladesh</h1>
                     <p>The sudden flood has resulted hundreds of people are dead.Most of the dead
-                         body has not found.Many child are survive during this unwanted situation.
-                         All communication with all 6 upazilla of Feni is disconnected from main district.
-                         The daily important food is not available.Imagine losing everything in a matter of hours,
-                          there treasures belonging, there sense of security .kindly donate to help those.</p>
-                        
+                        body has not found.Many child are survive during this unwanted situation.
+                        All communication with all 6 upazilla of Feni is disconnected from main district.
+                        The daily important food is not available.Imagine losing everything in a matter of hours,
+                        there treasures belonging, there sense of security .kindly donate to help those.</p>
+
                     <!-- input amount -->
-                    <input type="text" placeholder="Write Donation Amount" class="input input-bordered w-full" />
+                    <input id="input-amount-feni" type="text" placeholder="Write Donation Amount"
+                        class="input input-bordered w-full" />
 
                     <!-- input btn -->
-                    <button id="blog-btn" class="w-full btn font-bold rounded-md bg-primary hover:bg-slate-100">Donate
+                    <button id="donate-btn-feni"
+                        class="w-full btn font-bold rounded-md bg-primary hover:bg-slate-100">Donate
                         Now</button>
                     </button>
                 </div>
@@ -139,17 +157,23 @@
                 <!-- donation amount -->
                 <div class="flex items-center gap-1 ">
                     <span><img class="" src="assets/coin.png" alt=""></span>
-                    <span>0</span>BDT
+                    <span id="donation-amount-movement">0</span>BDT
                 </div>
                 <div class="mt-3 space-y-4">
                     <h1 class="text-text_primary text-xl font-semibold">Aid for Injured in the Quota Movement</h1>
-                    <p>The Quota movement,JULY revolution, has resulted in thousands of people injuries and hardship. Your assist is important,providing medical support and necessary supplies to those affected. By providing, your help ensure that injured receive the  support they need during this hardship time. Each donation plays vital role in reduce their misery and aiding in their recovery. Please  making a donation to aiding these brave individuals in their need.</p>
-                        
+                    <p>The Quota movement,JULY revolution, has resulted in thousands of people injuries and hardship.
+                        Your assist is important,providing medical support and necessary supplies to those affected. By
+                        providing, your help ensure that injured receive the support they need during this hardship
+                        time. Each donation plays vital role in reduce their misery and aiding in their recovery. Please
+                        making a donation to aiding these brave individuals in their need.</p>
+
                     <!-- input amount -->
-                    <input type="text" placeholder="Write Donation Amount" class="input input-bordered w-full" />
+                    <input id="input-amount-movement" type="text" placeholder="Write Donation Amount"
+                        class="input input-bordered w-full" />
 
                     <!-- input btn -->
-                    <button id="blog-btn" class="w-full btn font-bold rounded-md bg-primary hover:bg-slate-100">Donate
+                    <button id="donate-movement-btn"
+                        class="w-full btn font-bold rounded-md bg-primary hover:bg-slate-100">Donate
                         Now</button>
                     </button>
                 </div>
@@ -158,14 +182,14 @@
 
     </main>
     <!-- donation content -->
-    <div class="w-11/12 lg:w-10/12 mx-auto" id="history-content">
-        <h1>history section</h1>
-    </div>
-<div class="h-28 bg-secondery">
+    <div class="w-11/12 lg:w-10/12 mx-auto space-y-5 mb-10 hidden" id="history-content">
 
-</div>
-<script src="js/funtion.js"></script>
-<script src="js/donation.js"></script>
+    </div>
+    <div class="h-28 bg-secondery ">
+
+    </div>
+    <script src="js/funtion.js"></script>
+    <script src="js/donation.js"></script>
 </body>
 
 </html>
