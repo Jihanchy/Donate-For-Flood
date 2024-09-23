@@ -4,8 +4,52 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Donation For Flood</title>
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+    <!-- daisyUI cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>    
+    <!-- tailwind-configuration -->
+    <script>
+        tailwind.config = {
+          theme: {
+            extend:{
+              colors: {
+                primary: 'rgb(180, 244, 97)',                                                     
+                secondery: 'rgb(249, 247, 243);'                                                     
+              },
+              fontFamily: {
+                 lexend: 'Lexend'
+  
+              },
+              backgroundImage: {
+                input: "url('./assets/bg.jpg')",
+  
+              },
+            },
+          },
+        }
+      </script>
 </head>
-<body>
+<body class="font-lexend ">
+    <header class=" bg-secondery">
+        <nav class="w-10/12 mx-auto flex items-center justify-between pt-3 pb-12">
+            <div>
+                <button id="blog-btn" class="px-6 py-2 font-semibold rounded-md bg-primary hover:bg-slate-100">Blog</button>
+            </div>
+            <div class="flex items-center gap-2">
+                <img src="assets/logo.png" alt="">
+                <h1 class="text-xl font-bold  hidden md:flex">Donate Bangladesh</h1>
+            </div>
+            <div class="flex items-center gap-2 font-semibold">
+                <span><img src="assets/coin.png" alt=""></span>
+                <span>5500</span>
+                BDT
+            </div>
+        </nav>   
+    </header>
     
 </body>
 </html>
