@@ -2,7 +2,7 @@
 // function for blog btn
 const blogBtn = document.getElementById("blog-btn")
 blogBtn.addEventListener('click', function () {
-    window.location.href = '/blog.html'
+    window.location.href = 'blog.html'
 })
 
 // variable
@@ -128,6 +128,5 @@ document.getElementById('donate-movement-btn').addEventListener('click', functio
     }
 
 })
-
 
 
