@@ -37,10 +37,10 @@
 </head>
 
 <body class="font-lexend ">
-    <header class="space-y-12">
+    <header class=" sticky top-0">
         <!-- navbar section -->
         <section class="bg-secondery">
-            <nav class="w-10/12 mx-auto flex items-center justify-between pt-3 pb-12">
+            <nav class="w-11/12 lg:w-10/12 mx-auto flex items-center justify-between pt-3 pb-12">
                 <div>
                     <button id="blog-btn"
                         class="px-6 py-2 font-semibold rounded-md bg-primary hover:bg-slate-100">Blog</button>
@@ -57,23 +57,23 @@
             </nav>
         </section>
         <!-- toggle-btn -->
-        <div class="flex justify-center gap-6 pb-6">
+        <div class="flex justify-center gap-6 pb-6 pt-14  bg-white bg-opacity-90 bg-transparent">
             <button class="px-6 py-2 font-semibold rounded-md bg-primary hover:bg-slate-100">Donation</button>
             <button class="px-8 py-2 font-semibold rounded-md bg-primary hover:bg-slate-100">History</button>
         </div>
     </header>
-    <main class="w-10/12 mx-auto">
+    <main class="w-11/12 lg:w-10/12 mx-auto">
         <!-- flood at noakhali -->
         <section class="p-8 rounded-lg shadow-sm border-2 border-stone-50 grid grid-cols-1 md:grid-cols-2 gap-5">
             <!-- img-content -->
             <div>
-                <img src="assets/noakhali.png" alt="">
+                <img class="w-full h-full" src="assets/noakhali.png" alt="">
             </div>
             <!-- text-content -->
             <div>
                 <!-- donation amount -->
                 <div class="flex items-center gap-1 ">
-                    <span><img src="assets/coin.png" alt=""></span>
+                    <span><img class="" src="assets/coin.png" alt=""></span>
                     <span>0</span>BDT
                 </div>
                 <div class="mt-3 space-y-4">
@@ -87,7 +87,38 @@
                         
                     <!-- input amount -->
                     <input type="text" placeholder="Write Donation Amount" class="input input-bordered w-full" />
-                    
+
+                    <!-- input btn -->
+                    <button id="blog-btn" class="w-full btn font-bold rounded-md bg-primary hover:bg-slate-100">Donate
+                        Now</button>
+                    </button>
+                </div>
+            </div>
+        </section>
+        <!-- Donate for Flood Relief in Feni,Bangladesh -->
+        <section class="p-8 rounded-lg shadow-sm border-2 border-stone-50 grid grid-cols-1 md:grid-cols-2 gap-5">
+            <!-- img-content -->
+            <div class="h-full w-full">
+                <img class="w-full h-full lg:h-96" src="assets/feni.png" alt="">
+            </div>
+            <!-- text-content -->
+            <div>
+                <!-- donation amount -->
+                <div class="flex items-center gap-1 ">
+                    <span><img class="" src="assets/coin.png" alt=""></span>
+                    <span>0</span>BDT
+                </div>
+                <div class="mt-3 space-y-4">
+                    <h1 class="text-text_primary text-xl font-semibold">Donate for Flood Relief in Feni,Bangladesh</h1>
+                    <p>The sudden flood has resulted hundreds of people are dead.Most of the dead
+                         body has not found.Many child are survive during this unwanted situation.
+                         All communication with all 6 upazilla of Feni is disconnected from main district.
+                         The daily important food is not available.Imagine losing everything in a matter of hours,
+                          there treasures belonging, there sense of security .kindly donate to help those.</p>
+                        
+                    <!-- input amount -->
+                    <input type="text" placeholder="Write Donation Amount" class="input input-bordered w-full" />
+
                     <!-- input btn -->
                     <button id="blog-btn" class="w-full btn font-bold rounded-md bg-primary hover:bg-slate-100">Donate
                         Now</button>
