@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <!-- font awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+    <!-- daisyUI cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- tailwind configuration -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: 'rgb(180, 244, 97)',
+                        secondery: 'rgb(249, 247, 243)',
+                        text_primary: 'rgb(17, 17, 17)',
+                    },
+                    fontFamily: {
+                        lexend: 'Lexend'
+
+                    },
+                    backgroundImage: {
+                        input: "url('./assets/bg.jpg')",
+
+                    },
+                },
+            },
+        }
+    </script>
+</head>
+
+<body>
+    <header class="bg-orange-50">
+        <nav class="w-11/12 lg:w-10/12 mx-auto flex items-center justify-between pt-3 pb-3 mb-6">
+            <div>
+                <button id="home-btn"
+                    class="px-6 py-2 font-semibold rounded-md bg-primary hover:bg-slate-100">Home</button>
+            </div>
+            <div class="flex items-center gap-2">
+                <img src="assets/logo.png" alt="">
+                <h1 class="text-xl font-bold  hidden md:flex">Donate Bangladesh</h1>
+            </div>
+            <div class="flex items-center gap-2 font-semibold">
+                <span><img src="assets/coin.png" alt=""></span>
+                <span>5500</span>
+                BDT
+            </div>
+        </nav>
+    </header>
+    <!-- faqs Section -->
+    <section class="w-11/12 lg:w-10/12 mx-auto ">
+        <h1 class="text-4xl font-extrabold text-text_primary mb-8">Important FAQ <span><i
+                    class="fa-regular fa-circle-question"></i></span></h1>
+        <div class="rounded-md border-2">
+            <div class="collapse collapse-arrow border-b-2 rounded-none">
+                <input type="radio" name="my-accordion-2" checked="checked" />
+                <div class="collapse-title text-xl font-medium">What is the Document Object Model?</div>
+                <div class="collapse-content">
+                    <p>The document Object Model is a programming articulation for web document.It shows the page that
+                        by programming one can change the document style, content.It shows the documents as object and
+                        nodes, that's why programs can connect with the web page.. </p>
+                </div>
+            </div>
+            <div class="collapse collapse-arrow border-b-2 rounded-none">
+                <input type="radio" name="my-accordion-2" />
+                <div class="collapse-title text-xl font-medium">How do you select an element from the DOM?</div>
+                <div class="collapse-content">
+                    <p>DOM shows the web page as like object and nodes, that's why I can select an element from the DOM
+                        by several ways.Here it is: <br>
+                        By using an id: example- getElementById() <br>
+                        By using class: example- getElementByClassName() <br>
+                        By using selector: example- querySelectorAll()/querySelector()
+                    </p>
+                </div>
+            </div>
+            <div class="collapse collapse-arrow border-b-2 rounded-none">
+                <input type="radio" name="my-accordion-2" />
+                <div class="collapse-title text-xl font-medium">What is event delegation in the context of DOM, why is
+                    it useful?</div>
+                <div class="collapse-content">
+                    <p>Event delegation is one of event bubbling method. It is an event handler
+                        that allows you to handle the event at the top in DOM tree to where the
+                        event was first time declared.The event delegation is very useful for
+                        large content.Because in the web page we have to add many event listener.
+                        So, by event delegation we use one event listener that allows you connect
+                        a single event listener to the parent div.Consequently, we have less code in the document.
+
+                    </p>
+                </div>
+            </div>
+            <div class="collapse collapse-arrow border-b-2 rounded-none">
+                <input type="radio" name="my-accordion-2" />
+                <div class="collapse-title text-xl font-medium">How do you manipulate an element's attributes and styles
+                    using the DOM?</div>
+                <div class="collapse-content">
+                    <p>I can manipulate an elements attributes by using getAttribute, setAttribute, removeAttribute. <br>
+                    Besides this, by using classList.add, classList.remove, templateString, document.style.color etc i can manipulate the styles in DOM.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
