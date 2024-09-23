@@ -51,18 +51,18 @@
                 </div>
                 <div class="flex items-center gap-2 font-semibold">
                     <span><img src="assets/coin.png" alt=""></span>
-                    <span>5500</span>
+                    <span id="current-balance">5500</span>
                     BDT
                 </div>
             </nav>
         </section>
         <!-- toggle-btn -->
         <div class="flex justify-center gap-6 pb-6 pt-14  bg-white bg-opacity-90 bg-transparent">
-            <button class="px-6 py-2 font-semibold rounded-md bg-primary hover:bg-slate-100">Donation</button>
-            <button class="px-8 py-2 font-semibold rounded-md bg-primary hover:bg-slate-100">History</button>
+            <button id="donation-btn" class="px-6 py-2 font-semibold rounded-md bg-primary">Donation</button>
+            <button id="history-btn" class="px-8 py-2 font-semibold rounded-md  ">History</button>
         </div>
     </header>
-    <main class="w-11/12 lg:w-10/12 mx-auto bg-white">
+    <main id="donation-content" class="w-11/12 lg:w-10/12 mx-auto bg-white">
         <!-- flood at noakhali -->
         <section class="p-8 rounded-lg shadow-sm border-2 border-stone-50 grid grid-cols-1 md:grid-cols-2 gap-5 mb-5">
             <!-- img-content -->
@@ -74,7 +74,7 @@
                 <!-- donation amount -->
                 <div class="flex items-center gap-1 ">
                     <span><img class="" src="assets/coin.png" alt=""></span>
-                    <span>0</span>BDT
+                    <span id="donation-amount">0</span>BDT
                 </div>
                 <div class="mt-3 space-y-4">
                     <h1 class="text-text_primary text-xl font-semibold">Donate for Flood at Noakhali, Bangladesh</h1>
@@ -86,10 +86,10 @@
                         making a positive impact on the lives of those in need.</p>
                         
                     <!-- input amount -->
-                    <input type="text" placeholder="Write Donation Amount" class="input input-bordered w-full" />
+                    <input id="input-amount-noakhlai" type="text" placeholder="Write Donation Amount" class="input input-bordered w-full" />
 
                     <!-- input btn -->
-                    <button id="blog-btn" class="w-full btn font-bold rounded-md bg-primary hover:bg-slate-100">Donate
+                    <button id="donate-btn-noakhali" class="w-full btn font-bold rounded-md bg-primary hover:bg-slate-100">Donate
                         Now</button>
                     </button>
                 </div>
@@ -155,10 +155,17 @@
                 </div>
             </div>
         </section>
+
     </main>
+    <!-- donation content -->
+    <div class="w-11/12 lg:w-10/12 mx-auto" id="history-content">
+        <h1>history section</h1>
+    </div>
 <div class="h-28 bg-secondery">
 
 </div>
+<script src="js/funtion.js"></script>
+<script src="js/donation.js"></script>
 </body>
 
 </html>
