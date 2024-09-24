@@ -20,7 +20,7 @@ historyTab.addEventListener('click', function () {
 
 // toggle-btn-2
 donationTab.addEventListener('click', function () {
-    
+
     historyTab.classList.remove('bg-primary')
     donationTab.classList.add('bg-primary')
 
@@ -40,11 +40,11 @@ document.getElementById('donate-btn-noakhali').addEventListener('click', functio
 document.getElementById('donate-btn-feni').addEventListener('click', function () {
     calculation('input-amount-feni', 'donation-amount-feni', 'current-balance', 'feni-text')
 
-    
+
 })
 // movement
 document.getElementById('donate-btn-movement').addEventListener('click', function () {
     calculation('input-amount-movement', 'donation-amount-movement', 'current-balance', 'movement-text')
 
-    
+
 })

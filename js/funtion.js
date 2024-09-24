@@ -25,6 +25,7 @@ function calculation(inputAmountId, donationAmountId, balanceId, historyText) {
          alert('invalid donation amount')
          return
     } else {
+        // calculation
         let newDonationAmount = donationAmount + inputAmount
         document.getElementById(donationAmountId).innerText = newDonationAmount.toFixed(2)
         let newBalance = balance - inputAmount
@@ -34,6 +35,7 @@ function calculation(inputAmountId, donationAmountId, balanceId, historyText) {
         const historyList = document.createElement("div")
         historyList.classList.add("border-2", "border-2", "p-8", "rounded-xl")
         historyList.innerHTML +=
+
         `
         <p class = "text-xl font-semibold text-black">${inputAmount.toFixed(2)} Taka is Donated for ${historyId}, Bangladesh</p>
         <p>Date: ${new Date().toLocaleDateString()}   ${new Date().toTimeString(+600)}</p>
