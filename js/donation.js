@@ -29,104 +29,22 @@ donationTab.addEventListener('click', function () {
 })
 
 
-
-// flood for noakhali functionality
+// common functionality
+// noakhali
 document.getElementById('donate-btn-noakhali').addEventListener('click', function () {
-    let inputAmountNoakhali = getInputFieldValueById('input-amount-noakhlai')
-    let balance = getTextById('current-balance')
-
-    // validation
-    if (inputAmountNoakhali <= 0 || isNaN(inputAmountNoakhali) || inputAmountNoakhali == '' || inputAmountNoakhali > balance) {
-        return alert('invalid input amount')
-    } else {
-        let donationAmount = getTextById('donation-amount')
-        let newDonationAmount = donationAmount + inputAmountNoakhali
-        document.getElementById('donation-amount').innerText = newDonationAmount.toFixed(2)
-
-        let newBalance = balance - inputAmountNoakhali
-        document.getElementById('current-balance').innerText = newBalance.toFixed(2)
-
-        // push to history section
-        const historyList = document.createElement("div")
-        historyList.classList.add("border-2", "border-2", "p-8", "rounded-xl")
-        historyList.innerHTML += 
-        `
-        <p class = "text-xl font-semibold text-black">${newDonationAmount.toFixed(2)} Taka is Donated for flood relief at Noakhali, Bangladesh</p>
-        <p>Date: ${new Date().toLocaleDateString()}   ${new Date().toTimeString(+600)}</p>
-     
-        `
-        historyContent.appendChild(historyList)
-
-        // modal
-        my_modal_5.showModal()
-    }
+    calculation('input-amount-noakhlai', 'donation-amount', 'current-balance', 'noakhali-text')
 
 
 })
-
-
-// flood for feni functionality
+// feni
 document.getElementById('donate-btn-feni').addEventListener('click', function () {
-    let inputAmountFeni = getInputFieldValueById('input-amount-feni')
-    let balance = getTextById('current-balance')
+    calculation('input-amount-feni', 'donation-amount-feni', 'current-balance', 'feni-text')
 
-    // validation
-    if (inputAmountFeni <= 0 || isNaN(inputAmountFeni) || inputAmountFeni == '' || inputAmountFeni > balance) {
-        return alert('invalid input amount')
-    } else {
-        let donationAmount = getTextById('donation-amount-feni')
-        let newDonationAmountFeni = donationAmount + inputAmountFeni
-        document.getElementById('donation-amount-feni').innerText = newDonationAmountFeni.toFixed(2)
-        let newBalance = balance - inputAmountFeni
-        document.getElementById('current-balance').innerText = newBalance.toFixed(2)
-
-        // push to history section
-        const historyList = document.createElement("div")
-        historyList.classList.add("border-2", "border-2", "p-8", "rounded-xl")
-        historyList.innerHTML += 
-        `
-        <p class = "text-xl font-semibold text-black">${newDonationAmountFeni.toFixed(2)} Taka is Donated for Flood relief at Feni, Bangladesh</p>
-        <p>Date: ${new Date().toLocaleDateString()}   ${new Date().toTimeString(+600)}</p>
-       
-        `
-        historyContent.appendChild(historyList)
-
-        // modal
-        my_modal_5.showModal()
-    }
-
-})
-
-
-// quota movement functionality
-document.getElementById('donate-movement-btn').addEventListener('click', function () {
-    let inputAmountMovement = getInputFieldValueById('input-amount-movement')
-    let balance = getTextById('current-balance')
-    if (inputAmountMovement <= 0 || isNaN(inputAmountMovement) || inputAmountMovement == '' || inputAmountMovement > balance) {
-        return alert('invalid input amount')
-    } else {
-        let donationAmount = getTextById('donation-amount-movement')
-        let newDonationAmountMovement = donationAmount + inputAmountMovement
-        document.getElementById('donation-amount-movement').innerText = newDonationAmountMovement.toFixed(2)
-
-        let newBalance = balance - inputAmountMovement
-        document.getElementById('current-balance').innerText = newBalance.toFixed(2)
-
-        // push to history section
-        const historyList = document.createElement("div")
-        historyList.classList.add("border-2", "border-2", "p-8", "rounded-xl")
-        historyList.innerHTML += 
-         `
-        <p class = "text-xl font-semibold text-black">${newDonationAmountMovement.toFixed(2)} Taka is Donated for Injured in Quota Movement, Bangladesh</p>
-        <p>Date: ${new Date().toLocaleDateString()}   ${new Date().toTimeString(+600)}</p>    
     
-         `
-        historyContent.appendChild(historyList)
-
-        // modal
-        my_modal_5.showModal()
-    }
-
 })
+// movement
+document.getElementById('donate-btn-movement').addEventListener('click', function () {
+    calculation('input-amount-movement', 'donation-amount-movement', 'current-balance', 'movement-text')
 
-
+    
+})
